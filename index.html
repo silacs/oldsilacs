@@ -8,8 +8,22 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style>*{margin:0;padding:0;box-sizing:border-box}:root{--main-gradient: linear-gradient(to top right, purple, orangered)}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}
-</style><link rel="stylesheet" href="styles-2SYBO2VN.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-2SYBO2VN.css"></noscript></head>
+</style><link rel="stylesheet" href="styles-5GUPDBME.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-5GUPDBME.css"></noscript></head>
 <body>
+  <script>
+    (function () {
+      // Retrieve the URL the user was trying to access when receiving the 404.
+      var redirect = sessionStorage.redirect;
+      // Remove the URL from sessionStorage.
+      delete sessionStorage.redirect;
+      // Check if we actually need to redirect.
+      if (redirect && redirect != location.href) {
+        // We need to redirect to the URL the user was trying to access.
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+  
   <app-root></app-root>
-<script src="polyfills-S3BTP7ME.js" type="module"></script><script src="main-T6NM3TU5.js" type="module"></script></body>
+<script src="polyfills-S3BTP7ME.js" type="module"></script><script src="main-WNPMXX4E.js" type="module"></script></body>
 </html>
